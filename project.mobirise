@@ -1,61 +1,63 @@
 {
   "settings": {
-    "name": "Site 2024-04-06 00:21",
     "currentPage": "index.html",
     "theme": {
-      "name": "startm5",
-      "title": "StartM5",
-      "titlePreset": "StartM5",
+      "name": "tokenm5",
+      "title": "TokenM5",
       "styling": {
-        "primaryColor": "#9fe870",
-        "secondaryColor": "#ffd7ef",
-        "successColor": "#3a341c",
-        "infoColor": "#320707",
-        "warningColor": "#a0e2e1",
-        "dangerColor": "#ffea64",
-        "mainFont": "Inter Tight",
-        "display1Font": "Inter Tight",
-        "display1Size": 5,
-        "display2Font": "Inter Tight",
-        "display2Size": 4,
-        "display5Font": "Inter Tight",
-        "display5Size": 2,
-        "display7Font": "Inter Tight",
-        "display7Size": 1.4,
-        "display4Font": "Inter Tight",
-        "display4Size": 1.4,
+        "primaryColor": "#cbff5b",
+        "secondaryColor": "#232323",
+        "successColor": "#30FFBB",
+        "infoColor": "#ffffff",
+        "warningColor": "#FFB130",
+        "dangerColor": "#FF3F30",
+        "mainFont": "Anonymous Pro",
+        "display1Font": "Anonymous Pro",
+        "display1Size": 7.5,
+        "display2Font": "Anonymous Pro",
+        "display2Size": 6,
+        "display5Font": "Anonymous Pro",
+        "display5Size": 4.2,
+        "display7Font": "Anonymous Pro",
+        "display7Size": 2,
+        "display4Font": "Anonymous Pro",
+        "display4Size": 1.52,
         "isRoundedImages": true,
         "isRoundedButtons": true,
-        "isLargeButtons": true,
-        "isGhostButtonBorder": true,
+        "isLargeButtons": false,
+        "isGhostButtonBorder": false,
         "underlinedLinks": false,
         "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
-      }
+      },
+      "titlePreset": "Cryptocurrency Platform",
+      "nameSelectPreset": "cryptocurrency-platform",
+      "presetSourceTheme": "tokenm5"
     },
     "path": "@PROJECT_PATH@",
-    "versionFirst": "5.9.17",
+    "name": "Site 2025-07-21 22:23",
+    "versionFirst": "5.9.18",
     "siteFonts": [
       {
-        "css": "'Inter Tight', sans-serif",
-        "name": "Inter Tight",
-        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+        "css": "'Anonymous Pro', monospace",
+        "name": "Anonymous Pro",
+        "url": "https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i"
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 1,
-    "versionPublish": "5.9.17",
+    "uniqCompNum": 0,
+    "versionPublish": "6.0.6",
     "screenshot": "screenshot.png",
-    "favicon": "@PROJECT_PATH@/assets/images/coding-128x128.png",
-    "mbrsiteDomain": "ztnl9sffvt",
+    "publishChangesOnly": false,
+    "favicon": false,
+    "mbrsiteDomain": "2ko4fayubv",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "cookiesAlert": false,
-    "gdpr": false,
-    "publishChangesOnly": true
+    "gdpr": false
   },
   "pages": {
     "index.html": {
@@ -71,45 +73,15 @@
         {
           "alias": false,
           "_styles": {
-            "display": "flex",
             "& when not (@fullScreen)": {
               "padding-top": "(@paddingTop * 1rem)",
               "padding-bottom": "(@paddingBottom * 1rem)"
             },
-            "& when (@bg-type = \"color\")": {
+            "& when (@bg-type = 'color')": {
               "background-color": "@bg-value"
             },
-            "& when (@bg-type = \"image\")": {
-              "background-image": "url(@bg-value)",
-              ".mbr-overlay": {
-                "background-color": "@overlayColor",
-                "opacity": "@overlayOpacity"
-              }
-            },
-            "@media (min-width: 768px)": {
-              "align-items": "~\"@{verticalAlign}\"",
-              ".row": {
-                "justify-content": "~\"@{horizontalAlign}\""
-              },
-              ".content-wrap": {
-                "padding": "1rem 3rem"
-              }
-            },
-            "@media (max-width: 991px) and (min-width: 768px)": {
-              ".content-wrap": {
-                "min-width": "50%"
-              }
-            },
-            "@media (max-width: 767px)": {
-              "-webkit-align-items": "center",
-              "align-items": "~\"@{verticalAlign}\"",
-              ".mbr-row": {
-                "-webkit-justify-content": "center",
-                "justify-content": "center"
-              },
-              ".content-wrap": {
-                "width": "100%"
-              }
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             },
             ".mbr-fallback-image.disabled": {
               "display": "none"
@@ -122,23 +94,99 @@
               "height": "100%",
               "position": "absolute",
               "top": "0",
-              "& when (@bg-type = \"video\")": {
+              "& when (@bg-type = 'video')": {
                 "background-image": "url(@fallBackImage)"
               }
             },
-            ".mbr-section-title, .mbr-section-subtitle": {
-              "text-align": "left",
-              "color": "#ffc091"
+            ".row": {
+              "justify-content": "center"
             },
-            ".mbr-text, .mbr-section-btn": {
-              "text-align": "left"
+            ".content-wrapper": {
+              ".title-wrapper": {
+                "margin-bottom": "40px",
+                "@media (max-width: 992px)": {
+                  "margin-bottom": "30px"
+                },
+                ".mbr-section-title": {
+                  "margin-bottom": "0"
+                },
+                ".mbr-section-subtitle": {
+                  "margin-bottom": "0"
+                }
+              },
+              ".text-wrapper": {
+                ".mbr-text": {
+                  "display": "inline-block",
+                  "width": "30%",
+                  "margin-bottom": "40px",
+                  "@media (max-width: 1200px)": {
+                    "width": "60%"
+                  },
+                  "@media (max-width: 992px)": {
+                    "width": "100%",
+                    "margin-bottom": "30px"
+                  }
+                }
+              },
+              ".tag-wrapper": {
+                "margin-top": "90px",
+                "@media (max-width: 992px)": {
+                  "margin-top": "30px"
+                },
+                ".tag-wrap": {
+                  "display": "inline-flex",
+                  "align-items": "center",
+                  "background-color": "@tagBg",
+                  "box-shadow": "0 1px 1px 1px @tagBorder",
+                  "padding": "14px",
+                  ".mbr-iconfont": {
+                    "width": "32px",
+                    "height": "32px",
+                    "min-width": "32px",
+                    "display": "inline-flex",
+                    "align-items": "center",
+                    "justify-content": "center",
+                    "border-radius": "100%",
+                    "background-color": "@tagBorder",
+                    "color": "@tagBg",
+                    "font-size": "18px",
+                    "margin-right": "12px"
+                  },
+                  ".mbr-tag": {
+                    "margin-bottom": "0"
+                  }
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#cbff5b"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-text, .text-wrapper": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-tag, .tag-wrapper": {
+              "color": "#ffffff",
+              "text-align": "center"
+            },
+            ".mbr-section-title, .mbr-section-btn": {
+              "text-align": "center"
+            },
+            ".hideContainer": {
+              "display": "none"
             }
           },
-          "_name": "header18",
-          "_sourceTheme": "startm5",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header18\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen, 'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"24\" step=\"1\" value=\"24\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"12\" condition=\"fullScreen == false\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"3\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show / Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n    <select title=\"Vertical Align\" name=\"verticalAlign\" condition=\"fullScreen\">\n      <option value=\"flex-start\">Top</option>\n      <option value=\"center\">Center</option>\n      <option value=\"flex-end\" selected>Bottom</option>\n    </select>\n    <select title=\"Horizontal Align\" name=\"horizontalAlign\">\n      <option value=\"flex-start\" selected>Left</option>\n      <option value=\"center\">Center</option>\n      <option value=\"flex-end\">Right</option>\n    </select>\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background17.jpg\" parallax>\n      <input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=2Gg6Seob5Mg\" selected>\n      <input type=\"color\" title=\"Color\" value=\"#260a30\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type!='color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"bg.type!='color' && overlay\">\n    <input type=\"range\" inline title=\"Overlay Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"bg.type!='color' && overlay\">\n  </mbr-parameters>\n\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row\">\n      <div class=\"content-wrap col-12 col-md-{{contentWidth}}\">\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-white mb-4\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\"><a href=\"https://www.linkedin.com/in/sabharee97/\" class=\"text-white\">Sabharees...</a><b></b></h1>\n        <h2 class=\"mbr-section-subtitle mbr-fonts-style mbr-white mb-4\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubtitle\">\n          Header Subtitle\n        </h2>\n        <p class=\"mbr-fonts-style mbr-text mbr-white mb-4\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n        <div class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-7\"><a class=\"btn btn-white-outline\" href=\"https://www.linkedin.com/in/sabharee97/\" data-app-placeholder=\"Type Text\">-&gt;</a></div>\n      </div>\n    </div>\n  </div>\n</section>",
-          "_cid": "u9htEiYhkZ",
-          "_anchor": "header18-0",
+          "_name": "header01",
+          "_sourceTheme": "tokenm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header01 tokenm5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"12\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <input type=\"checkbox\" title=\"Tag\" name=\"showTag\" checked>\n        <input type=\"checkbox\" title=\"Tag Icon\" name=\"showIcon\" condition=\"showTag\" checked>\n        <input type=\"color\" title=\"Tag BG\" value=\"#232323\" name=\"tagBg\" condition=\"showTag\" selected>\n        <input type=\"color\" title=\"Tag Border\" value=\"#ffffff\" name=\"tagBorder\" condition=\"showTag\" selected>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@THEME_PATH@/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-10\">\n                <div class=\"content-wrapper\">\n                    <div class=\"title-wrapper\" mbr-if=\"showTitle || showSubtitle\">\n                        <h2 class=\"mbr-section-title mbr-fonts-style\" data-app-selector=\".mbr-section-title, .mbr-section-btn\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                            <b>Sabharees.in</b></h2>\n                        <h2 class=\"mbr-section-subtitle mbr-fonts-style\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-1\" mbr-if=\"showSubtitle\"></h2>\n                    </div>\n                    <div class=\"text-wrapper\">\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .text-wrapper\"><b>** In Progress, LoL **</b></p>\n                    </div>\n                    <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-primary\" href=\"https://www.linkedin.com/in/sabharee97/\" data-app-placeholder=\"Type Text\">Find Me<span class=\"mobi-mbri mobi-mbri-growing-chart mbr-iconfont mbr-iconfont-btn\"></span></a></div>\n                    <div class=\"tag-wrapper hideContainer\" mbr-if=\"showTag\">\n                        <div class=\"tag-wrap\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-cash mobi-mbri\" mbr-if=\"showIcon\"></span>\n                            <p class=\"mbr-tag mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-tag, .tag-wrapper\">sampleText<br></p>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "uD3lkocI3e",
+          "_anchor": "header01-1",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": false,
