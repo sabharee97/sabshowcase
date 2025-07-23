@@ -50,7 +50,7 @@
     "screenshot": "screenshot.png",
     "publishChangesOnly": false,
     "favicon": "@PROJECT_PATH@/assets/images/icons8-superman-50201-50x50.png",
-    "mbrsiteDomain": "6u27hefdbk",
+    "mbrsiteDomain": "3uqbmome9r",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -63,7 +63,7 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
+        "title": "Sab",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
