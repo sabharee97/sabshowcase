@@ -35,7 +35,7 @@
       "presetSourceTheme": "tokenm5"
     },
     "path": "@PROJECT_PATH@",
-    "name": "Site 2025-07-21 22:23",
+    "name": "sabharees",
     "versionFirst": "5.9.18",
     "siteFonts": [
       {
@@ -49,8 +49,8 @@
     "versionPublish": "6.0.6",
     "screenshot": "screenshot.png",
     "publishChangesOnly": false,
-    "favicon": false,
-    "mbrsiteDomain": "2ko4fayubv",
+    "favicon": "@PROJECT_PATH@/assets/images/icons8-superman-50201-50x50.png",
+    "mbrsiteDomain": "wtrhnvlt0p",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
